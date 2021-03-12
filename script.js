@@ -2,6 +2,9 @@ const photoFile = document.getElementById('photo-file')
 let photoPreview = document.getElementById('photo-preview')
 let image;
 let photoName;
+let vh = window.innerHeight * 0.01;
+
+document.documentElement.style.setProperty('new-vh', `${vh}px`);
 
 // Select & Preview image
 document.getElementById('select-image')
